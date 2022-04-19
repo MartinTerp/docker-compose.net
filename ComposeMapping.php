@@ -1,4 +1,5 @@
 <?php
+// hay
 
 $mappings = array(
 	"add-host" => array("type" => "array", "function" => "extra_hosts"),
