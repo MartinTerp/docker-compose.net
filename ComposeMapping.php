@@ -1,5 +1,5 @@
 <?php
-// hay
+// hay, test commit
 
 $mappings = array(
 	"add-host" => array("type" => "array", "function" => "extra_hosts"),
