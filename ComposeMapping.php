@@ -28,8 +28,8 @@ $mappings = array(
 	"ulimit" => array("type" => "ulimit", "function" => "ulimit"),
 	"volume" => array("type" => "array", "function" => "volumes"),
 	"mount" => array("type" => "bindmount", "function" => "volumes"),
-    "image" => array("type" => "value", "function" => "image"),
-    "command" => array("type" => "value", "function" => "command"),
+	"image" => array("type" => "value", "function" => "image"),
+	"command" => array("type" => "value", "function" => "command"),
 );
 
 $mappings["v"] = $mappings["volume"];
