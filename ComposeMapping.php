@@ -30,7 +30,7 @@ $mappings = array(
 	"mount" => array("type" => "bindmount", "function" => "volumes"),
 	"image" => array("type" => "value", "function" => "image"),
 	"command" => array("type" => "value", "function" => "command"),
-	"workdir" => array("type" => "value", "function" => "command"),
+	"workdir" => array("type" => "value", "function" => "working_dir"),
 );
 
 $mappings["v"] = $mappings["volume"];
