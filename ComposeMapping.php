@@ -34,6 +34,7 @@ $mappings = array(
 );
 
 $mappings["v"] = $mappings["volume"];
+$mappings["l"] = $mappings["label"];
 $mappings["p"] = $mappings["publish"];
 $mappings["e"] = $mappings["env"];
 $mappings["w"] = $mappings["workdir"];
