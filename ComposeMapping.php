@@ -31,6 +31,7 @@ $mappings = array(
 	"image" => array("type" => "value", "function" => "image"),
 	"command" => array("type" => "value", "function" => "command"),
 	"workdir" => array("type" => "value", "function" => "working_dir"),
+	"security-opt" => array("type" => "array", "function" => "security_opt"),
 );
 
 $mappings["v"] = $mappings["volume"];
