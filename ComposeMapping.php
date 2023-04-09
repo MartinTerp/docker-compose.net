@@ -35,6 +35,7 @@ $mappings = array(
 	"user" => array("type" => "value", "function" => "user"),
 );
 
+$mappings["u"] = $mappings["user"];
 $mappings["v"] = $mappings["volume"];
 $mappings["l"] = $mappings["label"];
 $mappings["p"] = $mappings["publish"];
