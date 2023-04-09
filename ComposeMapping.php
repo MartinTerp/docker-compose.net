@@ -33,6 +33,7 @@ $mappings = array(
 	"workdir" => array("type" => "value", "function" => "working_dir"),
 	"security-opt" => array("type" => "array", "function" => "security_opt"),
 	"user" => array("type" => "value", "function" => "user"),
+	"pull" => array("type" => "value", "function" => "pull_policy"),
 );
 
 $mappings["u"] = $mappings["user"];
