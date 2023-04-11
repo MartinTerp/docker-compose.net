@@ -1,11 +1,10 @@
 <?php
-// hay, test commit
 
 $mappings = array(
 	"add-host" => array("type" => "array", "function" => "extra_hosts"),
 	"cap-add" => array("type" => "array", "function" => "cap_add"),
 	"cap-drop" => array("type" => "array", "function" => "cap_drop"),
-	"cgroup_parent" => array("type" => "value", "function" => "cgroup_parent"),
+	"cgroup-parent" => array("type" => "value", "function" => "cgroup_parent"),
 	"device" => array("type" => "array", "function" => "devices"),
 	"dns" => array("type" => "array", "function" => "dns"),
 	"dns_search" => array("type" => "array", "function" => "dns_search"),
@@ -25,7 +24,7 @@ $mappings = array(
 	"read-only" => array("type" => "switch", "function" => "read_only"),
 	"restart" => array("type" => "value", "function" => "restart"),
 	"tmpfs" => array("type" => "value", "function" => "tmpfs"),
-	"ulimit" => array("type" => "ulimit", "function" => "ulimit"),
+	"ulimit" => array("type" => "ulimit", "function" => "ulimits"),
 	"volume" => array("type" => "array", "function" => "volumes"),
 	"mount" => array("type" => "bindmount", "function" => "volumes"),
 	"image" => array("type" => "value", "function" => "image"),
@@ -34,12 +33,15 @@ $mappings = array(
 	"security-opt" => array("type" => "array", "function" => "security_opt"),
 	"user" => array("type" => "value", "function" => "user"),
 	"pull" => array("type" => "value", "function" => "pull_policy"),
+	"hostname" => array("type" => "value", "function" => "hostname"),
+	"gpus" => array("type" => "gpus", "function" => "deploy/resources/reservations/devices"),
 );
 
+$mappings["h"] = $mappings["hostname"];
 $mappings["u"] = $mappings["user"];
 $mappings["v"] = $mappings["volume"];
 $mappings["l"] = $mappings["label"];
 $mappings["p"] = $mappings["publish"];
 $mappings["e"] = $mappings["env"];
 $mappings["w"] = $mappings["workdir"];
-$mappings["net"] = $mappings["network"];
+$mappings["net"] = $mappings["network"]; 
