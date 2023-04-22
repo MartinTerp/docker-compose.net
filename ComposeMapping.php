@@ -35,6 +35,7 @@ $mappings = array(
 	"pull" => array("type" => "value", "function" => "pull_policy"),
 	"hostname" => array("type" => "value", "function" => "hostname"),
 	"gpus" => array("type" => "gpus", "function" => "deploy/resources/reservations/devices"),
+	"init" => array("type" => "switch", "function"=>"init"),
 );
 
 $mappings["h"] = $mappings["hostname"];
