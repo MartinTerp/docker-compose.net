@@ -36,6 +36,7 @@ $mappings = array(
 	"hostname" => array("type" => "value", "function" => "hostname"),
 	"gpus" => array("type" => "gpus", "function" => "deploy/resources/reservations/devices"),
 	"init" => array("type" => "switch", "function"=>"init"),
+	"platform" => array("type" => "value", "function" => "platform"),
 );
 
 $mappings["h"] = $mappings["hostname"];
